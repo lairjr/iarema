@@ -303,6 +303,21 @@ footer {
   margin: 2rem 0;
 }
 
+footer p {
+  margin: .5rem;
+}
+
+.icon {
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  transition: background-color .2s;
+}
+
+.icon:hover {
+  background-color: #D5D3D9;
+  cursor: pointer;
+}
+
 * {
   font-family: "Exo", sans-serif;
   color: var(--black);
