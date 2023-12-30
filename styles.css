@@ -163,16 +163,22 @@ body {
 main {
   max-width: 1200px;
   margin: auto;
-  width: 100%;
-  padding: 2rem 1rem;
+  padding: 0 1rem;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0 0;
   height: 100px;
+}
+
+section {
+  flex: 1;
 }
 
 nav {
@@ -215,7 +221,8 @@ nav a:hover::before {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10rem;
+  padding: 0;
+  flex: 1;
 }
 
 .about-text {
@@ -258,11 +265,15 @@ h3 {
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   main {
-    padding: 2rem 0;
+    padding: 0;
   }
 
   .cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about {
+    padding: 10rem;
   }
 }
 
@@ -289,6 +300,7 @@ h3 {
 
 footer {
   padding: 2rem 0;
+  margin: 2rem 0;
 }
 
 * {
