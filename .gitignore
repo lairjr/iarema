@@ -1,0 +1,27 @@
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Node.js packages
+node_modules/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+
+# Build output
+/dist
+/build
+
+# Environment variables
+.env
