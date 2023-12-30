@@ -81,4 +81,17 @@
       </footer>
     </main>
   </body>
+
+  <script>
+    const isLoggedIn = localStorage.getItem('loggedin');
+
+    if (!isLoggedIn) {
+      const password = prompt("Palavra passe:", "");
+      if (password != 'iaia') {
+        window.location.href = 'about.html';
+      } else {
+        localStorage.setItem('loggedin', true);
+      }
+    }
+  </script>
 </html>
