@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iarema Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/f4e8474cb9.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f4e8474cb9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
     <main>
       <header>
         <nav>
-            <a href="index.html">Projetos</a>
-            <a href="about.html">Sobre mim</a>
-          </ul>
+          <a href="index.html">Projetos</a>
+          <a href="about.html">Sobre mim</a>
         </nav>
       </header>
 
@@ -21,10 +24,10 @@
         <article class="tile">
           <h1>Com quem colaborei</h1>
           <div class="clients">
-            <img src="sicredi.png" alt="Sicredi Logo">
-            <img src="sicredi.png" alt="Sicredi Logo">
-            <img src="sicredi.png" alt="Sicredi Logo">
-            <img src="sicredi.png" alt="Sicredi Logo">
+            <img src="sicredi.png" alt="Sicredi Logo" />
+            <img src="sicredi.png" alt="Sicredi Logo" />
+            <img src="sicredi.png" alt="Sicredi Logo" />
+            <img src="sicredi.png" alt="Sicredi Logo" />
           </div>
         </article>
 
@@ -32,50 +35,39 @@
           <div class="card">
             <div class="image"></div>
             <div class="card-footer">
-              <h2>
-                Titulo
-              </h2>
-              <h3>
-                Subtitulo
-              </h3>
+              <h2>Titulo</h2>
+              <h3>Subtitulo</h3>
             </div>
           </div>
           <div class="card">
             <div class="image"></div>
             <div class="card-footer">
-              <h2>
-                Titulo
-              </h2>
-              <h3>
-                Subtitulo
-              </h3>
-            </div></div>
+              <h2>Titulo</h2>
+              <h3>Subtitulo</h3>
+            </div>
+          </div>
           <div class="card">
             <div class="image"></div>
             <div class="card-footer">
-              <h2>
-                Titulo
-              </h2>
-              <h3>
-                Subtitulo
-              </h3>
-            </div></div>
+              <h2>Titulo</h2>
+              <h3>Subtitulo</h3>
+            </div>
+          </div>
           <div class="card">
             <div class="image"></div>
             <div class="card-footer">
-              <h2>
-                Titulo
-              </h2>
-              <h3>
-                Subtitulo
-              </h3>
-            </div></div>
+              <h2>Titulo</h2>
+              <h3>Subtitulo</h3>
+            </div>
+          </div>
         </article>
       </section>
 
       <footer>
         <span class="icon">
-          <a href="https://www.linkedin.com/in/iarema-soares/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/iarema-soares/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </span>
         <p>iaremasoares@gmail.com</p>
       </footer>
@@ -83,14 +75,14 @@
   </body>
 
   <script>
-    const isLoggedIn = localStorage.getItem('loggedin');
+    const isLoggedIn = localStorage.getItem("loggedin");
 
     if (!isLoggedIn) {
       const password = prompt("Palavra passe:", "");
-      if (password != 'iaia') {
-        window.location.href = 'about.html';
+      if (password != "iaia") {
+        window.location.href = "about.html";
       } else {
-        localStorage.setItem('loggedin', true);
+        localStorage.setItem("loggedin", true);
       }
     }
   </script>
