@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iarema Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/f4e8474cb9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+            <a href="index.html">Projetos</a>
+            <a href="about.html">Sobre mim</a>
+          </ul>
+        </nav>
+      </header>
+
+        <section>
+            <article id="case"></article>
+        </section>
+
+        <footer>
+            <span class="icon">
+                <a href="https://www.linkedin.com/in/iarema-soares/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </span>
+            <p>iaremasoares@gmail.com</p>
+        </footer>
+    </main>
+  </body>
+
+  <script>
+    const logIn = function () {
+        const isLoggedIn = localStorage.getItem('loggedin');
+
+        if (!isLoggedIn) {
+            const password = prompt("Palavra passe:", "");
+            if (password != 'iaia') {
+                window.location.href = 'about.html';
+            } else {
+                localStorage.setItem('loggedin', true);
+            }
+        }
+    }
+
+    const loadCase = async function () {
+        const converter = new showdown.Converter();
+        const response = await fetch('cases/sicredi.md', { mode: 'no-cors' });
+        const text = await response.text();
+        const html = converter.makeHtml(text);
+        document.getElementById('case').innerHTML = html;
+    }
+
+    logIn();
+    loadCase();
+  </script>
+</html>
