@@ -50,8 +50,10 @@
     };
 
     const loadCase = async function () {
+      const params = new URLSearchParams(window.location.search);
+      const caseName = params.get("case") || "not-found";
       const converter = new showdown.Converter();
-      const response = await fetch("cases/sicredi.md", { mode: "no-cors" });
+      const response = await fetch(`cases/${caseName}.md`, { mode: "no-cors" });
       const text = await response.text();
       const html = converter.makeHtml(text);
       document.getElementById("case").innerHTML = html;
