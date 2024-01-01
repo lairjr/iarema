@@ -244,6 +244,11 @@ h3 {
   font-size: 1.2rem;
 }
 
+ul {
+  line-height: 1.5;
+  list-style: inside;
+}
+
 .clients {
   display: flex;
   flex-wrap: wrap;
