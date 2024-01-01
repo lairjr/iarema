@@ -20,8 +20,6 @@ Notamos que ambas as operações têm oportunidades para evoluir e tangibilizar 
 
 Endereçar os atritos emergentes que estão impactando na avaliação da experiência para evitar o possível desgaste na percepção da marca (quick wins).
 
-Endereçar os atritos emergentes que estão impactando na avaliação da experiência para evitar o possível desgaste na percepção da marca (quick wins).
-
 Absorver e adequar as práticas de atendimento da localiza para impactar a experiência de Unidas.
 Equilibrar a percepção de variedade de possibilidades em preço e opções de
 veículos em Localiza.
