@@ -244,6 +244,12 @@ h3 {
   font-size: 1.2rem;
 }
 
+ol {
+  line-height: 1.5;
+  list-style: decimal;
+  list-style-position: inside;
+}
+
 ul {
   line-height: 1.5;
   list-style: inside;
