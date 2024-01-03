@@ -1,6 +1,6 @@
 ## O desafio
 
-A Localiza fez a aquisição da Unidas e a área de gestão de frotas (B2B) identificou que dentro de todo universo de clientes, tanto da base Localiza quanto da base Unidas, tem uma sobreposição de 250 clientes que estão nas duas bases. Para fazer a migração destes clientes para a base da Localiza, a área gostaria de entender o que da experiência da Unidas tem que levar para a experiência da Localiza.
+O cliente do segmento de gestão de frotas para empresas fez a aquisição de uma concorrente direta e a área de gestão de frotas (B2B) identificou que dentro de todo universo de clientes, tanto da base Localiza quanto da base Unidas, tem uma sobreposição de 250 clientes que estão nas duas bases. Para fazer a migração destes clientes para a base da Localiza, a área gostaria de entender o que da experiência da Unidas tem que levar para a experiência da Localiza.
 
 ## Objetivo
 
