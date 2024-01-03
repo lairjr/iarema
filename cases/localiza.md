@@ -13,21 +13,21 @@ Realizamos entrevistas remotas com 10 clientes de diferentes perfis, aprofundand
 
 ## Sínteses
 
-Mapeamos seis experiences goals preponderantes nas entrevistas 1:1 com o usuários finais. O clientes gostam de sentir que: o contrato é
+- Mapeamos seis experiences goals preponderantes nas entrevistas 1:1 com o usuários finais. O clientes gostam de sentir que: o contrato é
 vantajoso; os problemas deles são prioridade para a empresa contratada; a empresa contratada respeita o meu tempo; estarei sempre seguro e amparado; meu atendimento é personalizado e diferenciado; a empresa conhece as peculiaridades do meu contrato.
 
-Notamos que ambas as operações tinham oportunidades para evoluir e tangibilizar suas propostas de valor e de marca. A adquirente destacava-se em atendimento prestado e contato via canais; e a adquirida em flexibilidade de ofertas, ou seja, preços mais em conta e abertura à negociação. 
+- Notamos que ambas as operações tinham oportunidades para evoluir e tangibilizar suas propostas de valor e de marca. A adquirente destacava-se em atendimento prestado e contato via canais; e a adquirida em flexibilidade de ofertas, ou seja, preços mais em conta e abertura à negociação. 
 
-Apontamos que é necessário absorver e adequar as práticas de atendimento da adquirente para impactar a experiência de adquirida.
+- Apontamos que é necessário absorver e adequar as práticas de atendimento da adquirente para impactar a experiência de adquirida.
 
-Constatamos que é preciso equilibrar a percepção de variedade de possibilidades em preço e opções de
+- Constatamos que é preciso equilibrar a percepção de variedade de possibilidades em preço e opções de
 veículos na adquirida.
 
-Preço competitivo não é mais suficiente, e é preciso pensar em estratégias de diferenciação para fidelização do cliente a médio/longo prazo.
+- Preço competitivo não é mais suficiente, e é preciso pensar em estratégias de diferenciação para fidelização do cliente a médio/longo prazo.
 
-É necessário criar barreiras de entrada e fatores de diferenciação, já que volume e preço não são fatores de diferenciação suficientes para gerar competitividade e, tampouco, barra a entrada de novos players no mercado.
+- É necessário criar barreiras de entrada e fatores de diferenciação, já que volume e preço não são fatores de diferenciação suficientes para gerar competitividade e, tampouco, barra a entrada de novos players no mercado.
 
-Relacionamento gera confiança. A importância do atendimento como ponto focal, centralizado e disponível para o cliente é mais esperado do que nunca. Os portais digitais são fortes aliados nesse movimento e devem ser priorizados.
+- Relacionamento gera confiança. A importância do atendimento como ponto focal, centralizado e disponível para o cliente é mais esperado do que nunca. Os portais digitais são fortes aliados nesse movimento e devem ser priorizados.
 
-A expectativa é ter uma experiência excepcional.As pessoas não comparam as experiências somente com a mesma categoria de produtos ou serviços, mas com toda e qualquer experiência que tiveram. Então, o nível esperado será sempre alto.
+- A expectativa é ter uma experiência excepcional.As pessoas não comparam as experiências somente com a mesma categoria de produtos ou serviços, mas com toda e qualquer experiência que tiveram. Então, o nível esperado será sempre alto.
 
