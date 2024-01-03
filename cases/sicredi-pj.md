@@ -1,17 +1,16 @@
-## Segmento PJ
-
-Qualificação e refinamento deste segmento dentro da instituição financeira
-
-O cliente nos acionou para processar, organizar e aprofundar o conhecimento que a empresa possui sobre o mercado de clientes PJ, gerando insights de forma estruturada que orientem a execução e a priorização do planejamento estratégico.
-
 ## O desafio
 
-1. Iniciar uma base de conhecimento unificada a respeito do associado e também da concorrência do segmento financeiro PJ, buscando compreender o nível de competitividade na oferta de produtos e serviços;
+Qualificar e refinar informações sobre o público PJ (pessoa jurídica) dentro da instituição financeira. 
+Em função desta demanda, fomos acionados para para processar, organizar e aprofundar o conhecimento que a empresa possui sobre o mercado de clientes PJ, gerando insights de forma estruturada que orientem a execução e a priorização do planejamento estratégico.
+
+## O objetivo
+
+1. Iniciar uma base de conhecimento unificada a respeito do desse público e também de sua concorrência, buscando compreender o nível de competitividade na oferta de produtos e serviços. 
 2. Criar um "fast-lane" garantindo que possamos gerar e distribuir insights para a organização desde o início da sua implementação.
 
 ## Nossa abordagem
 
-- Reunir e processar as informações já existentes na organização a respeito do segmento, incluindo dados, pesquisas qualitativas e quantitativas, e conhecimentos empíricos ainda não estruturados;
+- Reunimos e processar as informações já existentes na organização a respeito do segmento, incluindo dados, pesquisas qualitativas e quantitativas, e conhecimentos empíricos ainda não estruturados;
 - Criar e validar, com apoio de áreas-chave, um quadro/framework que contenha as informações necessárias para orientar a compreensão do usuário e potencial-usuário PJ;
 - Executar entrevistas e outras técnicas de pesquisa com associados, gerentes de negócio e clientes de concorrentes;
 - Processar e refinar as informações coletadas dentro do Sicredi e no campo de pesquisa para gerar insights relevantes para o segmento, estruturando-os dentro do quadro/frameworks de insights e da pirâmide de atributos.
