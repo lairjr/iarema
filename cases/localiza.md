@@ -1,6 +1,6 @@
 ## O desafio
 
-O cliente do segmento de gestão de frotas para empresas fez a aquisição de uma concorrente direta e a área de gestão de frotas (B2B) identificou que dentro de todo universo de clientes, tanto da base Localiza quanto da base Unidas, tem uma sobreposição de 250 clientes que estão nas duas bases. Para fazer a migração destes clientes para a base da Localiza, a área gostaria de entender o que da experiência da Unidas tem que levar para a experiência da Localiza.
+O cliente do segmento de gestão de frotas para empresas fez a aquisição de uma concorrente direta. Com isso, a área de gestão de frotas identificou que dentro de todo universo de clientes, tanto da base da adquirente, quanto da adquirida, havia uma sobreposição de 250 clientes que estavam nas listas das duas companhias. Para promover a migração destes clientes para a base da adquirente, a área gostaria de entender o que da experiência da adquirida poderia ser levado para o serviço e experiência da adquirente.
 
 ## Objetivo
 
