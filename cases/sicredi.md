@@ -35,7 +35,8 @@ Por fim, no último dia de workshop, apresentamos as 12 experience goals mapeada
 ## Sínteses
 
 Ao longo de três meses de projeto, construímos uma proposta de valor que conjugava os desejos e anseios dos usuários associados aos produtos financeiros adequados aos segmentos em questão de pessoa física. Sendo a instituição financeira a responsável por estabelecer pontes entre os usuários e os produtos ofertados.
+
 Para isso, criamos um combo de ferramentas que são aplicadas na criação de uma proposta de valor consistente para cada segmento.
-Mapeamento do nível da zona de relação que estabelecemos com o usuário;
-Os objetivos de experiência, que podem ser interpretados como experience goals;
-A matriz de interação, que revela as preferências em relação a como os usuários querem interagir com o cliente
+Mapeamos os objetivos de experiência, que podem ser interpretados como experience goals. Além disso, desenvolvemos a matriz de interação, que revela as preferências em relação a como os usuários querem interagir com o banco. 
+
+Com base nessas ferramentas e na votação feita junto aos stakeholders, foi desenhado um diagrama que aponta para a proposta de valor mais adequada para cada uma das personas pré-definidas pela instituição. Nela, eram apresentados os produtos e/ou serviços finaneceiros mais adequados ao segmento em questão bem como as experience goals mais compatíveis com cada persona.    
