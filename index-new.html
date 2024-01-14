@@ -122,7 +122,8 @@
       cardFooter.appendChild(carSubtitle);
 
       const cardLink = document.createElement("a");
-      cardLink.setAttribute("href", "https://google.com");
+      const cardHref = `case.html?slug=${cardData.fields.cases.fields.slug}`;
+      cardLink.setAttribute("href", cardHref);
       cardLink.appendChild(cardImage);
       cardLink.appendChild(cardFooter);
 
