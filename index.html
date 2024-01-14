@@ -16,6 +16,10 @@
       src="https://kit.fontawesome.com/f4e8474cb9.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/contentful@10.6.16/dist/contentful.browser.min.js"
+      charset="utf-8"
+    ></script>
   </head>
 
   <body>
@@ -38,42 +42,7 @@
           </div>
         </article>
 
-        <article class="cards">
-          <div class="card">
-            <a href="cases.html?case=sicredi">
-              <div class="image"></div>
-              <div class="card-footer">
-                <h2>Sicredi</h2>
-                <h3>Subtitulo</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card">
-            <a href="cases.html?case=sicredi-pj">
-              <div class="image"></div>
-              <div class="card-footer">
-                <h2>Sicredi PJ</h2>
-                <h3>Subtitulo</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card">
-            <a href="cases.html?case=localiza">
-              <div class="image"></div>
-              <div class="card-footer">
-                <h2>Localiza</h2>
-                <h3>Subtitulo</h3>
-              </div>
-            </a>
-          </div>
-          <div class="card">
-            <div class="image"></div>
-            <div class="card-footer">
-              <h2>Titulo</h2>
-              <h3>Subtitulo</h3>
-            </div>
-          </div>
-        </article>
+        <article id="cards" class="cards"></article>
       </section>
 
       <footer>
@@ -88,15 +57,66 @@
   </body>
 
   <script>
-    const isLoggedIn = localStorage.getItem("loggedin");
+    const logIn = function () {
+      const isLoggedIn = localStorage.getItem("loggedin");
 
-    if (!isLoggedIn) {
-      const password = prompt("Palavra passe:", "");
-      if (password != "iaia") {
-        window.location.href = "about.html";
-      } else {
-        localStorage.setItem("loggedin", true);
+      if (!isLoggedIn) {
+        const password = prompt("Palavra passe:", "");
+        if (password != "iaia") {
+          window.location.href = "about.html";
+        } else {
+          localStorage.setItem("loggedin", true);
+        }
       }
-    }
+    };
+
+    const buildCard = function (id, cardData) {
+      const cardImage = document.createElement("div");
+      cardImage.classList.add("image");
+
+      const cardFooter = document.createElement("div");
+      cardFooter.classList.add("card-footer");
+
+      const cardTitle = document.createElement("h2");
+      cardTitle.innerHTML = cardData.fields.titulo;
+
+      const carSubtitle = document.createElement("h3");
+      carSubtitle.innerHTML = cardData.fields.subtitulo;
+
+      cardFooter.appendChild(cardTitle);
+      cardFooter.appendChild(carSubtitle);
+
+      const cardLink = document.createElement("a");
+      const cardHref = `case.html?slug=${cardData.fields.cases.fields.slug}`;
+      cardLink.setAttribute("href", cardHref);
+      cardLink.appendChild(cardImage);
+      cardLink.appendChild(cardFooter);
+
+      const cardDiv = document.createElement("div");
+      cardDiv.setAttribute("id", id);
+      cardDiv.classList.add("card");
+      cardDiv.appendChild(cardLink);
+
+      return cardDiv;
+    };
+
+    const loadCases = async function () {
+      const client = contentful.createClient({
+        space: "8uqqx7uvbgac",
+        environment: "master", // defaults to 'master' if not set
+        accessToken: "Yb83XLWSE8dRefi2mkViX_hvZGr0i_p50dwl94HTfYM",
+      });
+      const entries = await client.getEntries({
+        content_type: "cardCases",
+      });
+      const cards = document.getElementById("cards");
+      entries.items.forEach((entry, index) => {
+        const card = buildCard(`card-${index}`, entry);
+        cards.appendChild(card);
+      });
+    };
+
+    logIn();
+    loadCases();
   </script>
 </html>
