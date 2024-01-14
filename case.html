@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore meu portfólio de pesquisa de usuários. Descubra como meus insights profundos e análises detalhadas ajudam a criar experiências de usuário excepcionais. Veja meus estudos de caso agora."
+    />
+    <title>
+      Iarema Soares | UX Researcher | Pequisadora de experiências de usuários
+    </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f4e8474cb9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/contentful@10.6.16/dist/contentful.browser.min.js"
+      charset="utf-8"
+    ></script>
+    <script>
+      const exports = {}; // quick fix because 'exports' is not defined in rich-text bundle below
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@contentful/rich-text-html-renderer@16.3.0/dist/rich-text-html-renderer.es5.min.js"
+      charset="utf-8"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <a href="/">Projetos</a>
+          <a href="about.html">Sobre mim</a>
+        </nav>
+      </header>
+
+      <section>
+        <article id="case"></article>
+      </section>
+
+      <footer>
+        <span class="icon">
+          <a href="https://www.linkedin.com/in/iarema-soares/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </span>
+        <p>iaremasoares@gmail.com</p>
+      </footer>
+    </main>
+  </body>
+
+  <script>
+    const logIn = function () {
+      const isLoggedIn = localStorage.getItem("loggedin");
+
+      if (!isLoggedIn) {
+        const password = prompt("Palavra passe:", "");
+        if (password != "iaia") {
+          window.location.href = "about.html";
+        } else {
+          localStorage.setItem("loggedin", true);
+        }
+      }
+    };
+
+    function renderAsset(node, children) {
+      const imgUrl = `https:${node.data.target.fields.file.url}`;
+      const height = node.data.target.fields.file.details.image.height;
+      const width = node.data.target.fields.file.details.image.width;
+      const alt = node.data.target.fields.description;
+
+      return `<img src="${imgUrl}" alt="${alt}" height="${height}" width="${width}">`;
+    }
+
+    const renderOptions = {
+      renderNode: {
+        "embedded-asset-block": renderAsset,
+      },
+    };
+
+    const loadCase = async function () {
+      const params = new URLSearchParams(window.location.search);
+      const caseName = params.get("case") || "not-found";
+
+      const client = contentful.createClient({
+        space: "8uqqx7uvbgac",
+        environment: "master", // defaults to 'master' if not set
+        accessToken: "Yb83XLWSE8dRefi2mkViX_hvZGr0i_p50dwl94HTfYM",
+      });
+
+      const entry = await client.getEntry("3qmtgjGB3m9BWYxHORnFgQ");
+      const rootContent = entry.fields.content;
+
+      const renderedHtml = await documentToHtmlString(
+        rootContent,
+        renderOptions
+      );
+      document.getElementById("case").innerHTML = renderedHtml;
+    };
+
+    logIn();
+    loadCase();
+  </script>
+</html>
