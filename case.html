@@ -83,7 +83,7 @@
 
     const loadCase = async function () {
       const params = new URLSearchParams(window.location.search);
-      const caseName = params.get("case") || "not-found";
+      const caseSlug = params.get("slug") || "not-found";
 
       const client = contentful.createClient({
         space: "8uqqx7uvbgac",
@@ -91,8 +91,11 @@
         accessToken: "Yb83XLWSE8dRefi2mkViX_hvZGr0i_p50dwl94HTfYM",
       });
 
-      const entry = await client.getEntry("3qmtgjGB3m9BWYxHORnFgQ");
-      const rootContent = entry.fields.content;
+      const entries = await client.getEntries({
+        content_type: "cases",
+        "fields.slug": caseSlug,
+      });
+      const rootContent = entries.items[0].fields.content;
 
       const renderedHtml = await documentToHtmlString(
         rootContent,
