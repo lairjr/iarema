@@ -327,6 +327,12 @@ footer p {
 
 #case p {
   line-height: 1.5;
+  padding: 0.5rem;
+}
+
+#about p {
+  line-height: 1.5;
+  padding: 0.5rem;
 }
 
 /* End of Global styles */
