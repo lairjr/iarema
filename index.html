@@ -66,8 +66,17 @@
     };
 
     const buildCard = function (id, cardData) {
-      const cardImage = document.createElement("div");
-      cardImage.classList.add("image");
+      const imageContainer = document.createElement("div");
+      imageContainer.classList.add("image-container");
+
+      const cardImage = document.createElement("img");
+      console.log(cardData.fields.imagem);
+      cardImage.setAttribute("alt", cardData.fields.imagem.fields.title);
+      cardImage.setAttribute(
+        "src",
+        `https:${cardData.fields.imagem.fields.file.url}`
+      );
+      imageContainer.appendChild(cardImage);
 
       const cardFooter = document.createElement("div");
       cardFooter.classList.add("card-footer");
@@ -84,7 +93,7 @@
       const cardLink = document.createElement("a");
       const cardHref = `case.html?slug=${cardData.fields.cases.fields.slug}`;
       cardLink.setAttribute("href", cardHref);
-      cardLink.appendChild(cardImage);
+      cardLink.appendChild(imageContainer);
       cardLink.appendChild(cardFooter);
 
       const cardDiv = document.createElement("div");
