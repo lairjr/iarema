@@ -70,9 +70,9 @@
       const imgUrl = `https:${node.data.target.fields.file.url}`;
       const height = node.data.target.fields.file.details.image.height;
       const width = node.data.target.fields.file.details.image.width;
-      const alt = node.data.target.fields.description;
+      const alt = node.data.target.fields.title;
 
-      return `<img src="${imgUrl}" alt="${alt}" height="${height}" width="${width}">`;
+      return `<div class="image-container"><img src="${imgUrl}" alt="${alt}" height="${height}" width="${width}"></div>`;
     }
 
     const renderOptions = {

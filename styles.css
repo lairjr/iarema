@@ -361,13 +361,25 @@ footer p {
 }
 
 #case h2 {
-  margin: 1rem 0;
+  margin: 1.2rem 0;
 }
 
 #case p {
   line-height: 1.5;
-  margin: 0.5rem;
+  margin: 0.8rem;
   text-align: justify;
+}
+
+#case .image-container {
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0;
+}
+
+#case .image-container img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #about p {
