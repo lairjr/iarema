@@ -309,6 +309,10 @@ ul {
   flex: 1;
 }
 
+.card .card-footer .card-lock {
+  font-size: 0.6rem;
+}
+
 .card .card-footer h2 {
   margin: 1rem 0;
 }

@@ -52,19 +52,6 @@
   </body>
 
   <script>
-    const logIn = function () {
-      const isLoggedIn = localStorage.getItem("loggedin");
-
-      if (!isLoggedIn) {
-        const password = prompt("Palavra passe:", "");
-        if (password != "iaia") {
-          window.location.href = "about.html";
-        } else {
-          localStorage.setItem("loggedin", true);
-        }
-      }
-    };
-
     const buildCard = function (id, cardData) {
       const imageContainer = document.createElement("div");
       imageContainer.classList.add("image-container");
@@ -81,12 +68,18 @@
       const cardFooter = document.createElement("div");
       cardFooter.classList.add("card-footer");
 
+      const cardLock = document.createElement("p");
+      cardLock.classList.add("card-lock");
+      cardLock.innerHTML =
+        '<i class="fa-solid fa-lock"></i> Solite acesso para visualizar o case completo';
+
       const cardTitle = document.createElement("h2");
       cardTitle.innerHTML = cardData.fields.titulo;
 
       const carSubtitle = document.createElement("h3");
       carSubtitle.innerHTML = cardData.fields.subtitulo;
 
+      cardFooter.appendChild(cardLock);
       cardFooter.appendChild(cardTitle);
       cardFooter.appendChild(carSubtitle);
 
@@ -144,7 +137,6 @@
       });
     };
 
-    logIn();
     loadCases();
     loadLogos();
   </script>
