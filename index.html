@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore meu portfólio de pesquisa de usuários. Descubra como meus insights profundos e análises detalhadas ajudam a criar experiências de usuário excepcionais. Veja meus estudos de caso agora."
+      content="Iarema Soares, Product Manager com experiência em meios de pagamento, Pix e automação de fluxos financeiros regulados. Veja meus projetos e experiências."
     />
-    <title>
-      Iarema Soares | UX Researcher | Pequisadora de experiências de usuários
-    </title>
+    <title>Iarema Soares | Product Manager</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
     <script
@@ -26,117 +24,452 @@
     <main>
       <header>
         <nav>
-          <a href="/">Projetos</a>
-          <a href="about.html">Sobre mim</a>
+          <a href="index.html#sobre">Sobre mim</a>
+          <a href="index.html#projetos">Cases</a>
+          <a href="index.html#experiencias">Experiências</a>
+          <a href="index.html#colaborei">Com quem colaborei</a>
+          <a href="index.html#contato">Contato</a>
         </nav>
       </header>
 
       <section>
-        <article class="tile">
-          <h1>Com quem colaborei</h1>
-          <div id="clients" class="clients"></div>
+        <article id="sobre" class="home-about">
+          <p class="about-eyebrow">Oi! Sou a</p>
+          <h1>Iarema Soares</h1>
+          <p class="about-headline">Product Manager</p>
+          <div class="about-bio">
+            <p>
+              Sou Product Manager com experiência em fluxos financeiros
+              regulados e meios de pagamento, transformando operações manuais
+              em fluxos automáticos e self-service. Na Creditas, liderei os
+              squads de Meios de Pagamento e Retomada de Garantias. Além
+              disso, conduzi melhorias do novo e-commerce do Grupo JBS, da
+              aquisição ao checkout. Antes disso, fui UX Researcher na No One,
+              com projetos para Sicredi, Hospital Albert Einstein, Grupo
+              Boticário e Localiza.
+            </p>
+          </div>
+          <ul class="skills-list" aria-label="Habilidades">
+            <li>Inteligência Artificial</li>
+            <li>Product Management</li>
+            <li>Product Strategy</li>
+            <li>Product Discovery</li>
+            <li>Priorização de roadmap</li>
+            <li>Gestão de stakeholder</li>
+            <li>User Experience</li>
+            <li>Metodologia ágil</li>
+            <li>Decisões orientadas a dados</li>
+          </ul>
         </article>
 
-        <article id="cards" class="cards"></article>
+        <!--
+          Carrossel de projetos. Para adicionar um case, copie um <li class="carousel-item">
+          inteiro (link + foto + título + subtítulo) e troque os dados. O carrossel se ajusta
+          sozinho a qualquer quantidade de itens. Imagens locais ficam em images/.
+        -->
+        <article id="projetos" class="projects">
+          <h2>Cases</h2>
+          <div
+            class="carousel"
+            data-carousel
+            role="region"
+            aria-roledescription="carrossel"
+            aria-label="Cases"
+          >
+            <button
+              type="button"
+              class="carousel-btn prev"
+              aria-label="Projeto anterior"
+            >
+              &#8249;
+            </button>
+            <ul class="carousel-track" tabindex="0">
+              <li class="carousel-item">
+                <a class="project-card" href="receitas-swift.html">
+                  <div class="project-photo">
+                    <img
+                      src="images/receitas-swift.png"
+                      alt="Mulher cozinhando com uma receita aberta no tablet"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="project-body">
+                    <h3 class="project-title">Discovery do produto Receitas, da Swift</h3>
+                    <p class="project-subtitle">Swift (Grupo JBS)</p>
+                  </div>
+                </a>
+              </li>
+              <li class="carousel-item">
+                <a class="project-card" href="feature-self-service.html">
+                  <div class="project-photo">
+                    <img
+                      src="images/capacase.webp"
+                      alt="Capa do case: feature self-service de reabertura de processos"
+                    />
+                  </div>
+                  <div class="project-body">
+                    <h3 class="project-title">
+                      Feature self-service de reabertura de processos
+                    </h3>
+                    <p class="project-subtitle">Creditas</p>
+                  </div>
+                </a>
+              </li>
+              <li class="carousel-item">
+                <a class="project-card" href="sicredi-segmentacao-pj.html">
+                  <div class="project-photo">
+                    <img
+                      src="https://images.ctfassets.net/8uqqx7uvbgac/45CwWnk15DmDuwhPBwjx2w/f6c4777d217c99e4e4d18168f865f40d/pexels-ono-kosuki-5647270.jpeg"
+                      alt="Redesign de segmentação do público PJ"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="project-body">
+                    <h3 class="project-title">Redesign de segmentação do público PJ</h3>
+                    <p class="project-subtitle">Sicredi</p>
+                  </div>
+                </a>
+              </li>
+              <li class="carousel-item">
+                <a class="project-card" href="onboarding-app-saude.html">
+                  <div class="project-photo">
+                    <img
+                      src="https://images.ctfassets.net/8uqqx7uvbgac/3QFz5ENRbzxYpVSFKiUeHB/04311a028e66062f0f82deaaaac6be91/pexels-ketut-subiyanto-4428994.jpeg"
+                      alt="Jornada de onboarding do usuário em um app de saúde"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="project-body">
+                    <h3 class="project-title">Jornada de onboarding do usuário em um app de saúde</h3>
+                    <p class="project-subtitle">Hospital Albert Einstein</p>
+                  </div>
+                </a>
+              </li>
+              <li class="carousel-item">
+                <a class="project-card" href="sicredi-proposta-de-valor.html">
+                  <div class="project-photo">
+                    <img
+                      src="https://images.ctfassets.net/8uqqx7uvbgac/4EMRxQCvewfVqWPGovil0E/40f9f0273cd0f7c99a6ce0bc401d3c2e/pexels-wallsio-15543047.jpeg"
+                      alt="Redefinição da proposta de valor bancária"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="project-body">
+                    <h3 class="project-title">Redefinição da proposta de valor bancária</h3>
+                    <p class="project-subtitle">Sicredi</p>
+                  </div>
+                </a>
+              </li>
+              <li class="carousel-item">
+                <a class="project-card" href="localiza-unidas.html">
+                  <div class="project-photo">
+                    <img
+                      src="https://images.ctfassets.net/8uqqx7uvbgac/QSyd44yoU4tML67wbdnxz/dea60e7e04670a5a84fda2c571c7cdef/pexels-pixabay-273230.jpeg"
+                      alt="Mapeamento de oportunidades de jornada"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="project-body">
+                    <h3 class="project-title">Mapeamento de oportunidades de jornada</h3>
+                    <p class="project-subtitle">Localiza | Unidas</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="carousel-btn next"
+              aria-label="Próximo projeto"
+            >
+              &#8250;
+            </button>
+            <div class="carousel-dots"></div>
+          </div>
+        </article>
+
+        <article id="experiencias" class="experiences">
+          <h2>Experiências</h2>
+
+          <article class="experience">
+            <h3 class="experience-role">
+              Product Manager
+              <span class="experience-company">Framework Digital</span>
+            </h3>
+            <p class="experience-meta">Jun 2026 – Atual</p>
+            <p class="experience-about">
+              Consultoria de produto, tecnologia e estratégia | Alocada no
+              Grupo JBS e Dexco
+            </p>
+            <ul class="experience-bullets">
+              <li>
+                Liderei o discovery da reformulação do portal de e-commerce da
+                Swift (grupo JBS), cobrindo a jornada de ponta a ponta:
+                aquisição, checkout e opções de pagamento.
+              </li>
+              <li>
+                Mapeei mais de 60 oportunidades e as priorizei em um roadmap de
+                cinco fases: absorção dos insights, estruturação e
+                priorização, quick wins, plataforma de inteligência de
+                receitas e backlog padrão.
+              </li>
+              <li>
+                Usei IA generativa como copiloto de pesquisa para mapear
+                concorrentes diretos e indiretos, fazer benchmark de práticas
+                de mercado em e-commerce e checkout e sintetizar insights que
+                orientaram as hipóteses de produto.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience">
+            <h3 class="experience-role">
+              Product Manager <span class="experience-company">Creditas</span>
+            </h3>
+            <p class="experience-meta">Nov 2024 – Abr 2026 · Remoto, Brasil</p>
+            <p class="experience-about">
+              Fintech líder na América Latina em crédito com garantia | Meios
+              de Pagamento e Retomada de Garantias
+            </p>
+            <ul class="experience-bullets">
+              <li>
+                Liderei a automação de operações financeiras reguladas
+                (jurídico + garantias), identificando e implementando a troca
+                de fornecedor de notificações extrajudiciais — redução de 15%
+                no custo da operação e economia anual de R$500 mil.
+              </li>
+              <li>
+                Desenhei a jornada de pagamento via Pix para clientes de
+                crédito consignado com contrato rescindido (sem desconto em
+                folha) e com múltiplos contratos, além de liderar melhorias na
+                jornada de pagamento dos produtos de benefícios, veículo e
+                home.
+              </li>
+              <li>
+                Lancei funcionalidade self-service para reabertura de processos
+                jurídicos, eliminando a dependência do time de engenharia para
+                uma operação recorrente — tempo de resolução caiu de 1,5 dia
+                para imediato e os tickets operacionais em 80%.
+              </li>
+              <li>
+                Automatizei a integração documental (protesto) com a
+                plataforma de gestão processual, eliminando 30 uploads manuais
+                por dia e aumentando a confiabilidade documental do fluxo
+                jurídico-financeiro.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience">
+            <h3 class="experience-role">
+              Product Owner
+              <span class="experience-company">Semente Negócios</span>
+            </h3>
+            <p class="experience-meta">Abr 2024 – Out 2024 · Remoto, Brasil</p>
+            <p class="experience-about">
+              Empresa de inovação focada em educação empreendedora e
+              capacitação digital
+            </p>
+            <ul class="experience-bullets">
+              <li>
+                Liderei o lançamento do MVP e a evolução de produto de
+                e-learning com 5.000 usuários ativos, priorizando o roadmap a
+                partir de feedback de usuários e dados de negócio.
+              </li>
+              <li>
+                Estruturei ciclos ágeis orientados a aprendizado contínuo,
+                validando hipóteses em Discovery antes de comprometer
+                capacidade do time.
+              </li>
+              <li>
+                Mapeei jornadas de usuário em experiências híbridas e digitais,
+                identificando pontos de fricção e priorizando melhorias por
+                impacto.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience">
+            <h3 class="experience-role">
+              UX Researcher <span class="experience-company">No One</span>
+            </h3>
+            <p class="experience-meta">Mar 2022 – Mar 2024 · Remoto, Brasil</p>
+            <p class="experience-about">
+              Consultoria de design estratégico e pesquisa de experiência do
+              usuário
+            </p>
+            <ul class="experience-bullets">
+              <li>
+                Conduzi pesquisa para o Sicredi para definir o produto
+                financeiro mais adequado a cada persona de cliente.
+              </li>
+              <li>
+                Planejei e conduzi pesquisas com usuários (entrevistas, testes
+                de usabilidade, análise qualitativa) também para Hospital
+                Israelita Albert Einstein, Grupo Boticário e Localiza.
+              </li>
+              <li>
+                Defini estratégias de pesquisa e métodos de Discovery que
+                conectassem necessidades de usuário a objetivos de negócio,
+                orientando decisões de produto e priorização.
+              </li>
+              <li>
+                Facilitei ideação e cocriação com times multidisciplinares para
+                definir novos produtos e fluxos digitais.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience">
+            <h3 class="experience-role">
+              Instructional Designer
+              <span class="experience-company">UOL Edtech</span>
+            </h3>
+            <p class="experience-meta">
+              Set 2021 – Mar 2022 · Porto Alegre, RS - Brasil
+            </p>
+            <p class="experience-about">
+              Empresa de tecnologia educacional focada em educação corporativa
+              digital
+            </p>
+            <ul class="experience-bullets">
+              <li>
+                Estruturei conteúdos e experiências de aprendizagem digitais
+                para diferentes clientes, com foco em clareza, engajamento e
+                retenção.
+              </li>
+            </ul>
+          </article>
+        </article>
+
+        <article id="colaborei" class="tile collab">
+          <h2>Com quem colaborei</h2>
+          <div id="clients" class="clients">
+            <img
+              class="client-logo"
+              src="images/logos/creditas.png"
+              alt="Creditas"
+              data-name="Creditas"
+            />
+            <img
+              class="client-logo"
+              src="images/logos/sicredi.jpg"
+              alt="Sicredi"
+              data-name="Sicredi"
+            />
+            <img
+              class="client-logo"
+              src="images/logos/grupo-jbs.jpeg"
+              alt="Grupo JBS"
+              data-name="Grupo JBS"
+            />
+            <img
+              class="client-logo"
+              src="images/logos/grupo-boticario.png"
+              alt="Grupo Boticário"
+              data-name="Grupo Boticário"
+            />
+            <img
+              class="client-logo"
+              src="images/logos/localiza.png"
+              alt="Localiza"
+              data-name="Localiza"
+            />
+            <img
+              class="client-logo"
+              src="images/logos/hospital-albert-einstein.svg"
+              alt="Hospital Albert Einstein"
+              data-name="Hospital Albert Einstein"
+            />
+          </div>
+        </article>
+
+        <article id="contato" class="contact">
+          <h2>Contato</h2>
+          <p>Vamos conversar sobre produto, fintech e automação?</p>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:iaremasoares@gmail.com"
+                ><i class="fa-solid fa-envelope"></i> iaremasoares@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/iarema-soares/"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+              >
+            </li>
+          </ul>
+        </article>
       </section>
 
-      <footer>
-        <span class="icon">
-          <a href="https://www.linkedin.com/in/iarema-soares/" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-        </span>
-        <p>iaremasoares@gmail.com</p>
-      </footer>
     </main>
   </body>
 
   <script>
-    const buildCard = function (id, cardData) {
-      const imageContainer = document.createElement("div");
-      imageContainer.classList.add("image-container");
+    document.querySelectorAll(".clients img[data-name]").forEach((img) => {
+      const showName = () => {
+        const name = document.createElement("span");
+        name.className = "client-name";
+        name.textContent = img.dataset.name;
+        img.replaceWith(name);
+      };
+      img.addEventListener("error", showName);
+      if (img.complete && img.naturalWidth === 0) showName();
+    });
 
-      const cardImage = document.createElement("img");
-      cardImage.setAttribute("alt", cardData.fields.imagem.fields.title);
-      cardImage.setAttribute(
-        "src",
-        `https:${cardData.fields.imagem.fields.file.url}`
+  </script>
+
+  <script>
+    (function () {
+      const carousel = document.querySelector("[data-carousel]");
+      if (!carousel) return;
+
+      const track = carousel.querySelector(".carousel-track");
+      const items = Array.from(track.children);
+      const prev = carousel.querySelector(".carousel-btn.prev");
+      const next = carousel.querySelector(".carousel-btn.next");
+      const dotsBox = carousel.querySelector(".carousel-dots");
+
+      const step = () => items[1].offsetLeft - items[0].offsetLeft;
+      const goTo = (i) =>
+        track.scrollTo({ left: i * step(), behavior: "smooth" });
+
+      const dots = items.map((_, i) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "carousel-dot";
+        dot.setAttribute("aria-label", `Ir para o projeto ${i + 1}`);
+        dot.addEventListener("click", () => goTo(i));
+        dotsBox.appendChild(dot);
+        return dot;
+      });
+
+      prev.addEventListener("click", () =>
+        track.scrollBy({ left: -step(), behavior: "smooth" })
       );
-      imageContainer.appendChild(cardImage);
+      next.addEventListener("click", () =>
+        track.scrollBy({ left: step(), behavior: "smooth" })
+      );
 
-      const cardFooter = document.createElement("div");
-      cardFooter.classList.add("card-footer");
+      const update = () => {
+        const atStart = track.scrollLeft <= 2;
+        const atEnd =
+          track.scrollLeft >= track.scrollWidth - track.clientWidth - 2;
+        const index = atEnd
+          ? items.length - 1
+          : Math.round(track.scrollLeft / step());
+        dots.forEach((dot, i) =>
+          dot.setAttribute("aria-current", String(i === index))
+        );
+        prev.disabled = atStart;
+        next.disabled = atEnd;
+      };
 
-      const cardLock = document.createElement("p");
-      cardLock.classList.add("card-lock");
-      cardLock.innerHTML =
-        '<i class="fa-solid fa-lock"></i> Solite acesso para visualizar o case completo';
-
-      const cardTitle = document.createElement("h2");
-      cardTitle.innerHTML = cardData.fields.titulo;
-
-      const carSubtitle = document.createElement("h3");
-      carSubtitle.innerHTML = cardData.fields.subtitulo;
-
-      cardFooter.appendChild(cardLock);
-      cardFooter.appendChild(cardTitle);
-      cardFooter.appendChild(carSubtitle);
-
-      const cardLink = document.createElement("a");
-      const cardHref = `case.html?slug=${cardData.fields.cases.fields.slug}`;
-      cardLink.setAttribute("href", cardHref);
-      cardLink.appendChild(imageContainer);
-      cardLink.appendChild(cardFooter);
-
-      const cardDiv = document.createElement("div");
-      cardDiv.setAttribute("id", id);
-      cardDiv.classList.add("card");
-      cardDiv.appendChild(cardLink);
-
-      return cardDiv;
-    };
-
-    const loadCases = async function () {
-      const client = contentful.createClient({
-        space: "8uqqx7uvbgac",
-        environment: "master", // defaults to 'master' if not set
-        accessToken: "Yb83XLWSE8dRefi2mkViX_hvZGr0i_p50dwl94HTfYM",
-      });
-      const entries = await client.getEntries({
-        content_type: "cardCases",
-        order: "fields.order",
-      });
-      const cards = document.getElementById("cards");
-      entries.items.forEach((entry, index) => {
-        const card = buildCard(`card-${index}`, entry);
-        cards.appendChild(card);
-      });
-    };
-
-    const buildLogo = function (logoData) {
-      const imgLogo = document.createElement("img");
-      imgLogo.setAttribute("alt", logoData.fields.title);
-      imgLogo.setAttribute("src", `https:${logoData.fields.file.url}`);
-      return imgLogo;
-    };
-
-    const loadLogos = async function () {
-      const client = contentful.createClient({
-        space: "8uqqx7uvbgac",
-        environment: "master", // defaults to 'master' if not set
-        accessToken: "Yb83XLWSE8dRefi2mkViX_hvZGr0i_p50dwl94HTfYM",
-      });
-      const entries = await client.getEntries({
-        content_type: "logosClientes",
-      });
-      const clientLogos = document.getElementById("clients");
-      entries.items[0].fields.logos.forEach((entry, index) => {
-        const logo = buildLogo(entry);
-        clientLogos.appendChild(logo);
-      });
-    };
-
-    loadCases();
-    loadLogos();
+      track.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update);
+      update();
+    })();
   </script>
 </html>
