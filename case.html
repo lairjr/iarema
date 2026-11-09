@@ -32,8 +32,9 @@
     <main>
       <header>
         <nav>
-          <a href="/">Projetos</a>
-          <a href="about.html">Sobre mim</a>
+          <a href="index.html#sobre">Sobre mim</a>
+          <a href="index.html#projetos">Cases</a>
+          <a href="index.html#experiencias">Experiências</a>
         </nav>
       </header>
 
@@ -53,19 +54,6 @@
   </body>
 
   <script>
-    const logIn = function () {
-      const isLoggedIn = localStorage.getItem("loggedin");
-
-      if (!isLoggedIn) {
-        const password = prompt("Palavra passe:", "");
-        if (password != "iaia") {
-          window.location.href = "about.html";
-        } else {
-          localStorage.setItem("loggedin", true);
-        }
-      }
-    };
-
     function renderAsset(node, children) {
       const imgUrl = `https:${node.data.target.fields.file.url}`;
       const height = node.data.target.fields.file.details.image.height;
@@ -104,7 +92,6 @@
       document.getElementById("case").innerHTML = renderedHtml;
     };
 
-    logIn();
     loadCase();
   </script>
 </html>

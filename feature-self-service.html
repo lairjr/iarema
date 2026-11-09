@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case de produto: feature self-service de reabertura de processos na retomada de garantias. Como devolvemos autonomia para Legal e tiramos a engenharia do suporte operacional."
+    />
+    <title>
+      Feature self-service de reabertura de processos | Iarema Soares
+    </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f4e8474cb9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <a href="index.html#sobre">Sobre mim</a>
+          <a href="index.html#projetos">Cases</a>
+          <a href="index.html#experiencias">Experiências</a>
+        </nav>
+      </header>
+
+      <section class="case-container">
+        <article class="case-page">
+          <div class="case-breadcrumb" role="navigation" aria-label="Você está em">
+            <a href="index.html">Início</a> /
+            <a href="index.html#projetos">Cases</a> /
+            <span>Feature self-service de reabertura de processos</span>
+          </div>
+
+          <p class="case-eyebrow">Autonomia operacional</p>
+          <h1>Feature self-service de reabertura de processos</h1>
+          <p class="case-summary">
+            Tela self-service no backoffice para o time de Legal reabrir pastas
+            processuais sem depender de engenharia, reduzindo em 80% os tickets
+            de reabertura e levando o tempo de resolução de dias para imediato.
+          </p>
+
+          <ul class="skills-list" aria-label="Habilidades aplicadas">
+            <li>Discovery</li>
+            <li>Product Ops</li>
+            <li>Self-service</li>
+            <li>Governança de produto</li>
+            <li>Análise de tickets</li>
+            <li>Entrevistas com usuários internos</li>
+            <li>Automação</li>
+            <li>Trade-off de autonomia vs. controle</li>
+          </ul>
+
+          <h2>Contexto</h2>
+          <p>
+            Na retomada de garantias, o acompanhamento judicial vive em pastas
+            processuais. Para atualizar informações de um processo, o time de
+            Legal precisava reabrir a pasta, e isso só acontecia via
+            engenharia: os analistas pediam a reabertura para cumprir
+            conformidades do processo, a engenharia de Repossession executava
+            manualmente via ticket, e a pasta ainda precisava ficar consistente
+            entre a Projuris e os sistemas internos. Como PM do squad de
+            Retomada de Garantias, conduzi o case do discovery ao release. O
+            gargalo não era técnico, era de comunicação: em um único mês foram
+            30 tickets de reabertura, muitos em lote, com até 3 dias de troca
+            no Jira e no Slack só para alinhar o contexto de cada pedido. Quem
+            pagava a conta era a engenharia, desviada de código de valor para
+            suporte operacional, e Legal, parado esperando a pasta reabrir.
+          </p>
+
+          <h2>Ações</h2>
+          <p>
+            Antes de desenhar qualquer tela, analisei os tickets do board
+            #MeAjudaTech de Repossession (volume, recorrência, motivos e
+            pedidos em lote) e conduzi rodadas de entrevistas com analistas de
+            Legal sobre o que faziam com a pasta aberta e por quanto tempo. Três
+            achados guiaram o desenho: os pedidos se concentravam em poucos
+            cenários recorrentes, o que virou regras automáticas para os mais
+            comuns; Legal precisava, em geral, de 24h com a pasta aberta, o que
+            virou a janela padrão para as conformidades legais; e a troca de
+            mensagens existia para reconstruir contexto, então levei os dados
+            da retomada, da pasta e do processo para a própria tela.
+          </p>
+          <p>
+            Na decisão, comparei três caminhos: manter o fluxo via engenharia
+            (descartado: até 3 dias por pedido e dev em suporte), um botão de
+            reabertura direto na Projuris (descartado: rápido de habilitar, mas
+            gerava inconsistência com os sistemas internos) e uma tela
+            self-service no backoffice (escolhida: autonomia com regras e
+            trilha de auditoria, ao custo de desenvolvimento). O critério foi
+            dar autonomia a Legal sem abrir mão de consistência de dados e de
+            rastreabilidade de quem reabriu, quando e por quê.
+          </p>
+          <p>
+            A tela traz independência de longo prazo para engenharia e Legal, e
+            a estrutura base do design system da Creditas acelerou o
+            desenvolvimento. O resultado é uma tela centralizada com busca por
+            CCB, visão das retomadas do contrato com status e acesso à pasta
+            Projuris, e detalhe do processo com botão de reabertura, histórico
+            (quem pediu, motivo e timestamp) e prazo de 24h exibido no processo
+            e no modal.
+          </p>
+
+          <h2>Resultados</h2>
+          <ul class="case-results">
+            <li>Queda de 80% nos tickets de reabertura em 2 meses, com a redução começando 2 semanas após o release</li>
+            <li>Tempo de resolução da reabertura de 2 dias para imediato</li>
+            <li>Legal ganhou autonomia e a engenharia voltou ao código de valor</li>
+            <li>Governança embutida (regras automáticas, histórico e janela de 24h) tornou o self-service seguro</li>
+          </ul>
+
+          <p class="case-back"><a href="index.html#projetos">← Voltar aos cases</a></p>
+        </article>
+      </section>
+
+      <footer>
+        <span class="icon">
+          <a href="https://www.linkedin.com/in/iarema-soares/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </span>
+        <p>iaremasoares@gmail.com</p>
+      </footer>
+    </main>
+  </body>
+
+</html>
